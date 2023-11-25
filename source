@@ -84,14 +84,14 @@ while (1)
         for (j=0;j<4;j++)
         {
         PORTB = PORT[j];// ROW
-        PORTD = ~ALPHA[l][j];//show half of character (COLUMN)
+        PORTD = ~ALPHA[l][j];//show half of face (COLUMN)
         delay_us(500);
         }
         PORTB=0x00;//clear screen after show
         for (k=0;k<4;k++)
         {
         PORTC = PORT[k];// ROW
-        PORTD = ~ALPHA[l][k+4];//show other half of character(COLUMN)
+        PORTD = ~ALPHA[l][k+4];//show other half of face (COLUMN)
         delay_us(500);
         }
         PORTC=0x00;//clear screen after show.
